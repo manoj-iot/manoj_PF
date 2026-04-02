@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B Manoj Kumar - ECE Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="cursor-blob"></div>
+
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <!-- Interactive Boy Logo -->
+        <div class="logo-boy">
+            <svg id="boy-svg" viewBox="0 0 100 100" width="50" height="50">
+                <!-- Face -->
+                <circle cx="50" cy="50" r="45" fill="#fde6d8" />
+                <!-- Hair -->
+                <path d="M 5 45 A 45 45 0 0 1 95 45 Q 85 20 50 25 Q 15 20 5 45 Z" fill="#2d3748" />
+                <!-- Hair Tuft -->
+                <path d="M 40 25 Q 50 5 60 25" fill="#2d3748" stroke="#2d3748" stroke-width="6" stroke-linecap="round"/>
+                <!-- Eyes Background -->
+                <circle cx="32" cy="52" r="12" fill="#fff" />
+                <circle cx="68" cy="52" r="12" fill="#fff" />
+                <!-- Pupils -->
+                <circle id="pupil-left" cx="32" cy="52" r="5" fill="#1a202c" />
+                <circle id="pupil-right" cx="68" cy="52" r="5" fill="#1a202c" />
+                <!-- Cute Smile -->
+                <path d="M 35 72 Q 50 85 65 72" fill="none" stroke="#1a202c" stroke-width="4" stroke-linecap="round" />
+                <!-- Waving Hand -->
+                <g id="boy-hand">
+                    <!-- Palm -->
+                    <circle cx="95" cy="70" r="10" fill="#e8bc9e" />
+                    <!-- 5 Fingers -->
+                    <path d="M 86 74 L 78 68 M 88 66 L 82 52 M 93 63 L 90 47 M 98 63 L 98 48 M 102 66 L 105 54" stroke="#e8bc9e" stroke-width="4.5" stroke-linecap="round" />
+                </g>
+            </svg>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h4 class="greeting">Hello, I'm</h4>
+            <h1 class="name">B Manoj Kumar</h1>
+            <h3 class="title">ECE Student <span class="highlight">&</span> VLSI Enthusiast</h3>
+            <p class="description">Passionate about digital electronics, IoT, and designing practical hardware solutions.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/manoj-iot" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/manoj-kumar-bodakunta-246a1a377/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <div class="image-wrapper">
+                <img src="./images/WhatsApp%20Image%202026-03-26%20at%2020.36.55.jpeg" alt="B Manoj Kumar" class="profile-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I am an Electronics and Communication Engineering (ECE) student with a strong focus on <strong>VLSI design and simulation</strong>. I am very much interested in developing new practical chips and eagerly pursuing internships to bridge the gap between theoretical knowledge and real-world implementation.</p>
+                    <p>My journey in electronics is driven by curiosity, I am constantly interested in learning new things, and I have a desire to build tangible, impactful hardware systems from schematics to complete PCB designs.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <i class="fas fa-microchip stat-icon"></i>
+                        <h4>Hardware Enthusiast</h4>
+                        <p>Specialized in digital electronics and embedded systems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Technical <span>Skills</span></h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming & HDL</h3>
+                    <div class="tags">
+                        <span class="tag">C</span>
+                        <span class="tag">Verilog HDL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Design & Simulation Tools</h3>
+                    <div class="tags">
+                        <span class="tag">KiCAD</span>
+                        <span class="tag">MATLAB</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-memory"></i> Microcontrollers</h3>
+                    <div class="tags">
+                        <span class="tag">ESP</span>
+                        <span class="tag">Arduino</span>
+                        <span class="tag">8051</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-layer-group"></i> Specializations</h3>
+                    <div class="tags">
+                        <span class="tag">Digital Electronics</span>
+                        <span class="tag">Designing Schematics</span>
+                        <span class="tag">IoT</span>
+                        <span class="tag">PCB Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <h2 class="section-title">Featured <span>Projects</span></h2>
+            <div class="project-grid">
+                
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Automated Plant Watering System</h3>
+                    <p>Designed an automation system using Arduino and a soil moisture sensor. Ideal for application in house gardens, nurseries, and apartments to efficiently manage plant watering based on actual soil conditions.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>12V to 5V Converter Circuit</h3>
+                    <p>Designed a practical charging circuit to step down 12V to 5V. This cost-effective solution is highly useful in industrial and educational settings for charging 5V batteries without needing replacement units.</p>
+                    <a href="https://drive.google.com/file/d/1hxnvE_BOL9BQ99Ce8Kbz3oCIWbTv0--i/view?usp=drive_link" target="_blank" style="display:inline-block; margin-top:15px; color:var(--primary-color); font-weight:600; text-decoration:none;"><i class="fas fa-file-pdf"></i> View Board Designs Report</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-rss"></i></div>
+                    <h3>IR Distance Sensor</h3>
+                    <p>Engineered an IR sensor utilizing an Op-Amp to accurately detect the distance between the sensor and external objects.</p>
+                    <a href="https://drive.google.com/file/d/1hxnvE_BOL9BQ99Ce8Kbz3oCIWbTv0--i/view?usp=drive_link" target="_blank" style="display:inline-block; margin-top:15px; color:var(--primary-color); font-weight:600; text-decoration:none;"><i class="fas fa-file-pdf"></i> View Board Designs Report</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Internship <span>Experience</span></h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Component Procurement & Testing</h3>
+                        <h4>Zenvinnovations</h4>
+                        <p>Managed the sourcing of components and conducted rigorous testing to ensure reliability and performance of hardware prototypes.</p>
+                        <a href="./images/INTERNSHIP%20COMPLETION%20CERTIFICATE.pdf" target="_blank" style="display:inline-block; margin-top:10px; color:var(--primary-color); font-weight:600; font-size:0.9rem; text-decoration:none;"><i class="fas fa-external-link-alt"></i> View Completion Certificate</a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Nano Project Intern</h3>
+                        <h4>Zenvinnovations</h4>
+                        <p>Contributed to practical applications of nanotechnology in embedded electronics, focusing on innovation and precise implementation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section-padding">
+        <div class="container">
+            <h2 class="section-title">Education & <span>Qualifications</span></h2>
+            <div class="education-grid">
+                
+                <div class="edu-card">
+                    <div class="edu-year">2025 - 2028</div>
+                    <h3>B.E / B.Tech in ECE</h3>
+                    <h4 class="institute">Chaithanya Bharathi Institute of Technology (CBIT), Gandipet</h4>
+                    <p>Focusing on very-large-scale integration (VLSI) and advanced electronics communication methodologies.</p>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-year">2022 - 2025</div>
+                    <h3>Diploma in ECE</h3>
+                    <h4 class="institute">GPT Sangareddy</h4>
+                    <p class="score">Score: 9.65 CGPA (Distinction)</p>
+                    <p>Built fundamentals in microcontrollers, C programming, and circuit theories.</p>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-year">Completed 10th Grade</div>
+                    <h3>Secondary Education</h3>
+                    <h4 class="institute">TGMS Lingapur</h4>
+                    <p class="score">Score: 9.5 GPA</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title"><span>Certifications</span></h2>
+            <div class="cert-list">
+                <div class="cert-item">
+                    <i class="fas fa-certificate cert-icon"></i>
+                    <div>
+                        <h3>Electronics Foundations: Semiconductor Devices</h3>
+                        <p>LinkedIn Learning</p>
+                        <a href="./images/Certificate%20in%20ed.pdf" target="_blank" style="display:inline-block; margin-top:5px; color:var(--primary-color); font-weight:600; font-size:0.9rem; text-decoration:none;"><i class="fas fa-certificate"></i> View Certificate</a>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <i class="fas fa-certificate cert-icon"></i>
+                    <div>
+                        <h3>Complete Guide to C Programming Foundations</h3>
+                        <p>LinkedIn Learning</p>
+                        <a href="./images/C%20programming%20basics%20certificate.pdf" target="_blank" style="display:inline-block; margin-top:5px; color:var(--primary-color); font-weight:600; font-size:0.9rem; text-decoration:none;"><i class="fas fa-certificate"></i> View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <div class="contact-grid">
+                
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Hyderabad, Telangana, India</p>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:manibodakunta@gmail.com">manibodakunta@gmail.com</a></p>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Phone</h3>
+                    <p><a href="tel:+919704014879">9704014879</a></p>
+                </div>
+
+            </div>
+            
+            <div class="social-links text-center mt-4">
+                <a href="https://github.com/manoj-iot" target="_blank" class="social-icon"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/manoj-kumar-bodakunta-246a1a377/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 B Manoj Kumar. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
